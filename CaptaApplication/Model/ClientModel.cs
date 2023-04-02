@@ -8,4 +8,8 @@
         public string Sexo { get; set; }
         public string SituacaoCliente { get; set; }
     }
+    public class ClientAllClientsModel
+    {
+        public List<ClientModel> Clients { get; set; }
+    }
 }

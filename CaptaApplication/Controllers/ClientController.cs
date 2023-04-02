@@ -168,7 +168,9 @@ namespace CaptaApplication.Controllers
                 {
                     return StatusCode(Convert.ToInt32(HttpStatusCode.BadRequest), new { message = "Client does not exist" });
                 }
-                return StatusCode(Convert.ToInt32(HttpStatusCode.Created), client);
+                ClientAllClientsModel clientAllClientsModel = new ClientAllClientsModel();
+                clientAllClientsModel.Clients = client;
+                return StatusCode(Convert.ToInt32(HttpStatusCode.Created), clientAllClientsModel);
 
             }
             catch
