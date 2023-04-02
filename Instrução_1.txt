@@ -1,0 +1,18 @@
+Esse solution tem dentro dela um projeto API feito em .net core 6, se encontra na pasta "CaptaApplication", assim que executar esse projeto ele irá abrir o swagger com as 5 apis solicitadas no projeto;
+
+Os scripts do banco de dados se encontram na pasta "Scripts", existem dois scripts, um deles obrigatório e outro opcional;
+
+O script obrigatório "QueryModelagem" serve para criar o banco de dados no servidor que será usado para testar a aplicação, peço que execute em duas parte, a primeira parte a criação do banco e em seguida pode rodar o restante
+do script;
+
+O script opcional é o "QueryAlimentacao" ele serve para alimentar com alguns dados o banco de dados depois de criado, basta mudar as varíaveis do script e rodar quantas vezes desejar;
+
+Antes de inciar o proj é necessário abrir o arquivo "appsettings.json" dentro do projeto e mudar a ConnectionString para que o proj possa estabeler a conexão com o servidor;
+
+Swagger depois de iniciar o projeto: https://localhost:7215/swagger/index.html
+
+É importante não mudar a porta do projeto das apis pois o projeto que contém a interface da aplicação irá bater nessa url;
+
+Depois de todos passos anteriores serem feitos é possível testar as apis desse projeto antes mesmo de iniciar a aplicação, pode observar o swagger e fazer os requests desejados, lembrando que existe uma validação Basic Auth, sendo ela username: Capta e password: Capta123@
+
+Também é possível fazer via Postman, existe uma pasta no zip chamada PostmanApi, nela você encontra uma collection contendo um exemplo de todos request da aplicação.
